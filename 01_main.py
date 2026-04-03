@@ -71,3 +71,82 @@ one_min = 60 #sec
 
 sec_in_day = day*one_hour*one_min
 print(f"seconds in a day:{sec_in_day}")
+
+# Q7 Write a program to input two numbers and check whether they are equal or not.
+
+num1 = int(input("Enter frirst Number: "))
+num2 = int(input("Enter second Number: "))
+if num1 == num2:
+    print("Number is equal")
+else:
+    print("Number is not equal")
+
+
+# Q8 Write a program that prompts user to enter a character (O,A,B,C,F).
+# Then using if-elif-else construct display Outstanding.
+
+g =str(input("Enter Grade (O, A, B, C, F)"))
+grades = g.lower()
+
+if grades=="o":
+    print("Outstanding")
+elif grades=="a":
+    print("very good")
+elif grades=="b":
+    print("Good")
+elif grades=="c":
+    print("Average")
+elif grades=="f":
+    print("Fail")
+else:
+    print("Enter apporopriate grade")
+
+
+# Q9 Write a program that determines whether a digit, uppercase, or a lowercase character was entered.
+
+ch = input("Enter a character: ")
+
+if ch.isdigit():
+    print("It is a digit")
+elif ch.isupper():
+    print("It is an uppercase letter")
+elif ch.islower():
+    print("It is a lowercase letter")
+else:
+    print("It is a special character")
+
+# Q10 Write a program that count the number of lowercase characters, uppercase characters and digits
+# entered by the user
+
+text = input("Enter a sentence")
+
+lower = 0
+upper = 0
+digit = 0
+
+for ch in text:
+    if ch.islower():
+        lower += 1
+    elif ch.isupper():
+        upper += 1
+    elif ch.isdigit():
+        digit += 1
+
+print("lowercase letter", lower)
+print("Uppercase letter", upper)
+print("Digits", digit)
+
+# Q11 Write a program that displays first 10 natural numbers using loops
+
+for i in range(1, 11):
+    print(i)
+
+# Q12 Write a program to find average of first n numberrs using loops.
+
+n = int(input("Enter a number: "))
+total = 0 
+for i in range(1, n+1):
+    total += i
+average = total / n
+print(f"Average of first {n} numbers is: {average}")
+
