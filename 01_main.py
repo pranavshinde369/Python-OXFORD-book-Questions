@@ -150,3 +150,17 @@ for i in range(1, n+1):
 average = total / n
 print(f"Average of first {n} numbers is: {average}")
 
+# Q13 Write the program to sum the series 1sq/1 + 2sq/2 + 3sq/3 + 4sq/4 + 5sq/5 + ..+nsq/n
+
+n = int(input("Enter a number: "))
+total = 0
+for i in range(1, n+1):
+    total += (i**2) / i
+print(f"Sum of series is: {total}")
+
+#Q14 Write a program that prints a number, its square, and cube repeatedly in the range (1,n).
+
+n = int(input("Enter a number: "))
+for i in range (1, n+1):
+    print(i,i**2,i**3)
+    
