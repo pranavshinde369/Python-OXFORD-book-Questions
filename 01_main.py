@@ -260,3 +260,4 @@ old_movies = int(input("Enter number of old movies: "))
 total_cost = (new_videos * 75) + (old_movies * 50)
 
 print("Total cost is ₹", total_cost)
+
